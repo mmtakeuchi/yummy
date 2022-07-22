@@ -5,7 +5,7 @@ const BASE_URL = 'https://www.themealdb.com/api/json/v1/1'
 export const fetchRandomRecipes = async () => {
     try {
       const meals = [];
-      for (let i = 0; i < 4; i++) {
+      for (let i = 0; i < 12; i++) {
         meals.push(
           await axios
             .get(`${BASE_URL}/random.php`)

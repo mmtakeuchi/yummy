@@ -64,7 +64,13 @@ export interface ILikeButton {
     handleLike: () => void;
 }
 
+export interface IFavorite {
+    recipes: IRecipe[],
+}
+
 export interface IRecipeContext {
     recipes: IRecipe[];
     setRecipes: (data: any) => void;
+    favorites: IFavorite[],
+    setFavorites: (data: any) => void
 }

@@ -1,23 +1,22 @@
 import { createContext, useState, useEffect} from "react";
-import {IRecipeContext, IRecipe, IRecipeData} from '../recipe.model'
+import {IRecipeContext, IRecipe, IFavorite} from '../recipe.model'
 import { fetchRandomRecipes } from "../utils/api";
 
-const RecipeContext = createContext<IRecipeContext | undefined>(undefined);
+export const RecipeContext = createContext<IRecipeContext | undefined>(undefined);
 
 export const RecipeProvider = ({children}: any) => {
     const [recipes, setRecipes] = useState<IRecipe[]>([]);
+    const [favorites, setFavorites] = useState<IFavorite[]>([])
 
     useEffect(() => {
       const getRecipes = () => {
-        fetchRandomRecipes().then((data: any) => setRecipes(data))
+         fetchRandomRecipes().then((data: any) => setRecipes(data))
       }
 
       getRecipes()
       }, [])
 
-      console.log(recipes)
-
     return (
-        <RecipeContext.Provider value={{recipes, setRecipes}}>{children}</RecipeContext.Provider>
+        <RecipeContext.Provider value={{recipes, setRecipes, favorites, setFavorites}}>{children}</RecipeContext.Provider>
     )
 };

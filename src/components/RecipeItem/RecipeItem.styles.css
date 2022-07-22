@@ -6,6 +6,8 @@
     align-items: center;
     text-align: center;
     list-style: none;
+    text-decoration: none;
+    color: black
 }
 
 .recipe-img {

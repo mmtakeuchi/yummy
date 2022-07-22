@@ -1,0 +1,7 @@
+.recipe-ingredients-list {
+    list-style-type: none;
+}
+
+.recipe-instructions-list {
+    list-style-type: decimal;
+}

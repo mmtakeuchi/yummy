@@ -22,3 +22,14 @@ export const fetchRandomRecipes = async () => {
       console.log(error);
     }
   };
+
+  export const fetchSelectedRecipe = async (mealId: string | undefined) => {
+    try {
+        const response = await axios.get(`${BASE_URL}/lookup.php?i=${mealId}`)
+        const data = {...response.data.meals[0], liked: false}
+
+        if (data) return data
+    } catch (error) {
+        console.log(error)
+    }
+  }

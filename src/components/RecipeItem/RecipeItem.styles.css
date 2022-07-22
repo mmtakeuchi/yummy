@@ -1,22 +1,25 @@
 .recipe-item {
-    min-height: 3rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    min-height: 250px;
+    padding: 0.5rem;
     list-style: none;
     text-decoration: none;
-    color: black
+    color: black;
+}
+
+.recipe-item li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .recipe-img {
     width: 80%;
-    height: auto;
 }
 
-.recipe-name {
-    margin-top: 0.5rem;
+.recipe-title {
+    margin: 0.5rem 0 0 0;
+    max-width: 200px;
     font-weight: bold;
     font-size: 1.1rem;
+    text-align: center;
 }

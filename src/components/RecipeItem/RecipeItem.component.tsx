@@ -6,9 +6,9 @@ import './RecipeItem.styles.css'
 const RecipeItem = ({recipe}: IRecipeItem) => {
   return (
     <Link to={recipe.idMeal} className="recipe-item">
-    <li key={recipe.idMeal} >
+    <li key={recipe.idMeal}>
         <img className="recipe-img" src={`${recipe.strMealThumb}/preview`} alt={recipe.strMeal}/>
-        <p className="recipe-name">{recipe.strMeal}</p>
+        <p className="recipe-title">{recipe.strMeal}</p>
     </li>
     </Link>
   )

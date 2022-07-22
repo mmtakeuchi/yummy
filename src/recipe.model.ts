@@ -1,4 +1,4 @@
-export interface IRecipeData {
+export interface IRecipe {
     idMeal: string,
     strMeal: string,
     strDrinkAlternate: string,
@@ -51,14 +51,13 @@ export interface IRecipeData {
     strSource: string,
     strImageSource: string,
     strCreativeCommonsConfirmed: string,
-    dateModified: string
+    dateModified: string,
+    liked: boolean,
 }
 
-export interface IRecipe {
-    recipe: IRecipeData,
-    liked: boolean
+export interface IRecipeItem {
+    recipe: IRecipe
 }
-
 export interface ILikeButton {
     liked: boolean;
     handleLike: () => void;

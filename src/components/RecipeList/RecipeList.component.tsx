@@ -1,7 +1,8 @@
 import React, {useContext} from 'react'
-import './RecipeList.styles.css'
 import {RecipeContext} from '../../context/RecipeContext'
 import { IRecipeContext, IRecipe } from '../../recipe.model'
+import RecipeItem from '../RecipeItem/RecipeItem.component'
+import './RecipeList.styles.css'
 
 
 const RecipeList = () => {
@@ -9,11 +10,9 @@ const RecipeList = () => {
     console.log(recipes)
 
     const renderRecipes = () => {
-        return recipes && recipes.map(({recipe, liked}: IRecipe) => {
-            return (<li key={recipe.idMeal} className="recipe-item">
-                <p>{recipe.strMeal}</p>
-            </li>)
-        })
+        return recipes && recipes.map((recipe: IRecipe) => {
+        console.log(recipe)
+        return <RecipeItem key={recipe.idMeal} recipe={recipe} />})
     }
 
   return (

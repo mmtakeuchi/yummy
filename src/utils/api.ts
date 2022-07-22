@@ -10,7 +10,7 @@ export const fetchRandomRecipes = async () => {
           await axios
             .get(`${BASE_URL}/random.php`)
             .then((response) => {
-                return {recipe: {...response.data.meals[0]}, liked: false}
+                return {...response.data.meals[0], liked: false}
             })
             .catch((error) => console.log(error))
         );

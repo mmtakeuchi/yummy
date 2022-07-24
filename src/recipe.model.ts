@@ -71,5 +71,21 @@ export interface IRecipeContext {
     recipes: IRecipe[];
     setRecipes: (data: any) => void;
     favorites: IFavorite[],
-    setFavorites: (data: any) => void
+    setFavorites: (data: any) => void;
+    ingredients: IIngredient[];
+}
+
+export interface IIngredient {
+    idCategory: string,
+    strCategory: string,
+    strCategoryThumb: string,
+    strCategoryDescription: string
+}
+
+export interface IIngredientItem {
+    ingredient: IIngredient
+}
+
+export interface IIngredientList {
+    ingredients: IIngredient[];
 }

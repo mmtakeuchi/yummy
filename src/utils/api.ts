@@ -23,13 +23,24 @@ export const fetchRandomRecipes = async () => {
     }
   };
 
-  export const fetchSelectedRecipe = async (mealId: string | undefined) => {
-    try {
-        const response = await axios.get(`${BASE_URL}/lookup.php?i=${mealId}`)
-        const data = {...response.data.meals[0], liked: false}
+export const fetchSelectedRecipe = async (mealId: string | undefined) => {
+  try {
+      const response = await axios.get(`${BASE_URL}/lookup.php?i=${mealId}`)
+      const data = {...response.data.meals[0], liked: false}
 
-        if (data) return data
-    } catch (error) {
-        console.log(error)
-    }
+      if (data) return data
+  } catch (error) {
+      console.log(error)
   }
+}
+
+export const fetchIngredients = async () => {
+  try {
+      const response = await axios.get(`${BASE_URL}/categories.php`)
+      const data = response.data.categories
+
+      if (data) return data
+  } catch (error) {
+      console.log(error)
+  }
+}

@@ -1,6 +1,6 @@
 import React, {useContext} from 'react'
 import {RecipeContext} from '../../context/RecipeContext'
-import { IRecipeContext, IRecipe } from '../../recipe.model'
+import { IRecipe } from '../../recipe.model'
 import RecipeItem from '../RecipeItem/RecipeItem.component'
 import './RecipeList.styles.css'
 
@@ -13,7 +13,10 @@ const RecipeList = () => {
     }
 
   return (
-    <ul className='recipes-list'>{renderRecipes()}</ul>
+    <div>
+      <h2>Trending Recipes</h2>
+      <ul className='recipes-list'>{renderRecipes()}</ul>
+    </div>
   )
 }
 

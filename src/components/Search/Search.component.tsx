@@ -24,7 +24,7 @@ const Search = () => {
 
 
   return (
-    <form onSubmit={handleSearch}>
+    <form onSubmit={handleSearch} className="search-form">
       <input className="search-input" type="text" value={query} onChange={handleChange} placeholder="Search for a meal..."/>
       <button type="submit">Search</button>
     </form>

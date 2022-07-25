@@ -5,8 +5,6 @@ import RecipeItem from '../RecipeItem/RecipeItem.component'
 import './RecipeList.styles.css'
 
 const RecipeList = ({title, recipes}: IRecipeList) => {
-    // const {recipes}: any = useContext(RecipeContext)
-
     const renderRecipes = () => {
         return recipes && recipes.map((recipe: IRecipe) =>  <RecipeItem key={recipe.idMeal} recipe={recipe} />)
     }

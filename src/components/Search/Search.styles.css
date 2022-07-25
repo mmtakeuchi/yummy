@@ -1,4 +1,18 @@
-.search-input {
-    margin: 0 auto;
+.search-form {
+    width: 100%;
+    text-align: center;
+    margin: 1em;
+}
 
+.search-form input {
+    width: 30%;
+    padding: 0.25em;
+    border-radius: 5px;
+    font-size: 1.15em;
+}
+
+.search-form button {
+    padding: 0.25em;
+    font-size: 1.15em;
+    border-radius: 5px;
 }

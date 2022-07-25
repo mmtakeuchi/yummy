@@ -11,12 +11,10 @@ const RecipeItem = ({recipe}: IRecipeItem) => {
   }
 
   return (
-    // <Link to={recipe.idMeal} className="recipe-item">
     <li className="recipe-item" key={recipe.idMeal} onClick={navigateToRecipeDetails}>
         <img className="recipe-img" src={`${recipe.strMealThumb}/preview`} alt={recipe.strMeal}/>
         <p className="recipe-title">{recipe.strMeal}</p>
     </li>
-    // </Link>
   )
 }
 

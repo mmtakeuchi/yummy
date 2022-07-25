@@ -56,7 +56,12 @@ export interface IRecipe {
 }
 
 export interface IRecipeItem {
-    recipe: IRecipe
+    recipe: IRecipe;
+}
+
+export interface IRecipeList{
+    title?: string;
+    recipes: IRecipe[]
 }
 export interface ILikeButton {
     liked: boolean;

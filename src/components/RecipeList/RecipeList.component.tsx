@@ -1,12 +1,11 @@
 import React, {useContext} from 'react'
 import {RecipeContext} from '../../context/RecipeContext'
-import { IRecipe } from '../../recipe.model'
+import { IRecipe, IRecipeList } from '../../recipe.model'
 import RecipeItem from '../RecipeItem/RecipeItem.component'
 import './RecipeList.styles.css'
 
-
-const RecipeList = () => {
-    const {recipes}: any = useContext(RecipeContext)
+const RecipeList = ({title, recipes}: IRecipeList) => {
+    // const {recipes}: any = useContext(RecipeContext)
 
     const renderRecipes = () => {
         return recipes && recipes.map((recipe: IRecipe) =>  <RecipeItem key={recipe.idMeal} recipe={recipe} />)
@@ -14,8 +13,8 @@ const RecipeList = () => {
 
   return (
     <div className="recipe-list">
-      <h2>Trending Recipes</h2>
-      <ul className='recipes-list'>{renderRecipes()}</ul>
+      <h2>{title}</h2>
+      <ul>{renderRecipes()}</ul>
     </div>
   )
 }

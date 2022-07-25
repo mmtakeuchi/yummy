@@ -14,13 +14,12 @@ const Search = () => {
 
     const handleSearch = (e: React.FormEvent<HTMLFormElement>) => {
       e.preventDefault()
-      console.log(query)
 
       if (query) {
         searchRecipes(query)
       }
 
-      // navigate(`/recipes/?s=${query}`)
+      navigate(`/recipes/search/${query}`)
     }
 
 

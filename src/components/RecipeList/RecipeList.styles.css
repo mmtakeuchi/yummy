@@ -2,6 +2,10 @@
     width: 100%;
 }
 
+.recipe-list h2 {
+    text-transform: capitalize;
+}
+
 .recipe-list ul {
     min-width: 100%;
     padding: 0;

@@ -89,3 +89,9 @@ export interface IIngredientItem {
 export interface IIngredientList {
     ingredients: IIngredient[];
 }
+
+export interface ICategory {
+    idMeal: string,
+    strMeal: string,
+    strMealThumb: string,
+}

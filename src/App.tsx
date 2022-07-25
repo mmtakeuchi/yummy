@@ -1,8 +1,7 @@
 import React from 'react';
 import { BrowserRouter,Routes,Route,} from 'react-router-dom'
 import HomePage from './containers/HomePage/HomePage.container';
-import RecipeList from './components/RecipeList/RecipeList.component';
-import IngredientList from './components/IngredientList/IngredientList.component';
+import CategoryPage from './containers/CategoryPage/CategoryPage.container';
 import RecipeDetails from './components/RecipeDetails/RecipeDetails.component';
 import './App.css';
 
@@ -11,7 +10,8 @@ function App() {
     <BrowserRouter>
     <div className="App">
       <Routes>
-     <Route path="/:recipeId" element={<RecipeDetails/>}/>
+     <Route path="/recipes/:recipeId" element={<RecipeDetails/>}/>
+     <Route path="/categories/:categoryId" element={<CategoryPage/>}/>
      <Route path="/" element={<HomePage/>}/>
       </Routes>
     </div>

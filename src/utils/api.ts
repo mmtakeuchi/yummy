@@ -44,3 +44,14 @@ export const fetchIngredients = async () => {
       console.log(error)
   }
 }
+
+export const fetchRecipeByCategory = async (category?: string) => {
+  try {
+      const response = await axios.get(`${BASE_URL}/filter.php?c=${category}`)
+      const data = response.data.meals
+
+      if (data) return data
+  } catch (error) {
+      console.log(error)
+  }
+}

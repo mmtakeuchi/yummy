@@ -1,5 +1,9 @@
+.ingredients-section {
+    width: 100%;
+}
+
 .ingredients-list {
-    margin: 0 auto;
+    min-width: 100%;
     padding: 0;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));

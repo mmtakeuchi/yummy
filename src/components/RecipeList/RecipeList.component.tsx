@@ -13,7 +13,7 @@ const RecipeList = () => {
     }
 
   return (
-    <div>
+    <div className="recipe-list">
       <h2>Trending Recipes</h2>
       <ul className='recipes-list'>{renderRecipes()}</ul>
     </div>

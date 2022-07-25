@@ -73,6 +73,8 @@ export interface IRecipeContext {
     favorites: IFavorite[],
     setFavorites: (data: any) => void;
     ingredients: IIngredient[];
+    searchedRecipe: IRecipe[]
+    searchRecipes: (data: any) => void;
 }
 
 export interface IIngredient {

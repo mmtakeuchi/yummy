@@ -3,7 +3,6 @@ import { useParams } from 'react-router-dom'
 import {IRecipe} from '../../recipe.model'
 import { fetchRecipesByLetter } from '../../utils/api'
 import RecipeList from '../../components/RecipeList/RecipeList.component'
-import RecipeItem from '../../components/RecipeItem/RecipeItem.component'
 import './LetterRecipePage.styles.css'
 
 type Props = {}

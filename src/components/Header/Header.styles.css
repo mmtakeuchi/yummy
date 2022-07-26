@@ -1,7 +1,8 @@
 .header {
-    padding: 1.5rem;
+    padding: 1rem 1.5rem;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .links {
@@ -10,4 +11,14 @@
     color:navy;
     font-size: 1.5rem;
     font-weight: bold;
+}
+
+.header-form {
+    margin: 1em;
+}
+
+.header-form input {
+    padding: 0.25em;
+    border-radius: 5px;
+    font-size: 1.15em;
 }

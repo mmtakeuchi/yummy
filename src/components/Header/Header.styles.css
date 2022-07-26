@@ -1,0 +1,11 @@
+.header {
+    padding: 2rem;
+}
+
+.links {
+    cursor: pointer;
+    text-decoration: none;
+    color:navy;
+    font-size: 1.15rem;
+    font-weight: bold;
+}

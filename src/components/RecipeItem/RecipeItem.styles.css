@@ -1,4 +1,5 @@
 .recipe-item {
+    cursor: pointer;
     min-height: 250px;
     padding: 0.5rem;
     display: flex;

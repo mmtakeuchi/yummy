@@ -1,11 +1,13 @@
 .header {
-    padding: 2rem;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
 }
 
 .links {
     cursor: pointer;
     text-decoration: none;
     color:navy;
-    font-size: 1.15rem;
+    font-size: 1.5rem;
     font-weight: bold;
 }

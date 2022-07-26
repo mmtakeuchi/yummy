@@ -9,7 +9,6 @@ const Header = (props: Props) => {
   return (
     <header className="header">
         <Link to="/" className="links">Meals</Link>
-
     </header>
   )
 }

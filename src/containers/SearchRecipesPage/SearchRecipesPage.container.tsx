@@ -6,7 +6,7 @@ import './SearchRecipesPage.styles.css'
 
 type Props = {}
 
-const SearchRecipesPages = (props: Props) => {
+const SearchRecipesPage = (props: Props) => {
     const {query} = useParams()
     const {searchedRecipe}: any = useContext(RecipeContext)
 
@@ -21,4 +21,4 @@ const SearchRecipesPages = (props: Props) => {
   )
 }
 
-export default SearchRecipesPages
+export default SearchRecipesPage

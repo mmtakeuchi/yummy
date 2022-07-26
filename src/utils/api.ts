@@ -66,3 +66,14 @@ export const fetchSearchedRecipes = async (query: string) => {
       console.log(error)
   }
 }
+
+export const fetchRecipesByLetter = async (letter?: string) => {
+   try {
+      const response = await axios.get(`${BASE_URL}/search.php?f=${letter}`)
+      const data = response.data.meals
+
+      if (data) return data
+  } catch (error) {
+      console.log(error)
+  }
+}

@@ -1,0 +1,22 @@
+.alpha {
+    margin: 1em 0 2em 0;
+}
+
+.link {
+    color: black;
+    text-decoration: none;
+}
+
+.letters {
+    margin: 1em 0 1em 0;
+    text-transform: uppercase;
+}
+
+.letter {
+    color: black;
+    margin: 0 0.25em;
+}
+
+.letter:hover, .letter:visited {
+    color: blue;
+}

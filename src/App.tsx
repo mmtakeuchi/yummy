@@ -6,22 +6,24 @@ import CategoryPage from './containers/CategoryPage/CategoryPage.container';
 import RecipeDetails from './components/RecipeDetails/RecipeDetails.component';
 import SearchRecipesPage from './containers/SearchRecipesPage/SearchRecipesPage.container';
 import LetterRecipePage from './containers/LetterRecipePage/LetterRecipePage.container';
+import Footer from './components/Footer/Footer.component';
 import './App.css';
 
 function App() {
   return (
     <BrowserRouter>
       <div className="App">
-      <Header/>
-      <main className="main-container">
-        <Routes>
-          <Route path="/recipes/:recipeId" element={<RecipeDetails/>}/>
-          <Route path="/recipes/search/:query" element={<SearchRecipesPage/>}/>
-          <Route path="/categories/:categoryId" element={<CategoryPage/>}/>
-          <Route path="/recipes/letter/:letterId" element={<LetterRecipePage/>}/>
-          <Route path="/" element={<HomePage/>}/>
-        </Routes>
-      </main>
+        <Header/>
+        <main className="main-container">
+          <Routes>
+            <Route path="/recipes/:recipeId" element={<RecipeDetails/>}/>
+            <Route path="/recipes/search/:query" element={<SearchRecipesPage/>}/>
+            <Route path="/categories/:categoryId" element={<CategoryPage/>}/>
+            <Route path="/recipes/letter/:letterId" element={<LetterRecipePage/>}/>
+            <Route path="/" element={<HomePage/>}/>
+          </Routes>
+        </main>
+        <Footer/>
       </div>
     </BrowserRouter>
   );

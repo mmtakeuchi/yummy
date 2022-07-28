@@ -3,7 +3,7 @@ import {useParams} from 'react-router-dom'
 import { fetchSelectedRecipe } from '../../utils/api'
 import { sanitizeIngredient } from '../../utils'
 import { IRecipe } from '../../recipe.model'
-import './RecipeDetails.styles.css'
+import './RecipeDetailsPage.styles.css'
 
 const RecipeDetails = () => {
     const {recipeId} = useParams()

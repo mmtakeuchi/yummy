@@ -70,6 +70,10 @@
     grid-area: source
 }
 
+h4 {
+    text-align: center
+}
+
 .recipe-sources {
     display: flex;
     justify-content: center;

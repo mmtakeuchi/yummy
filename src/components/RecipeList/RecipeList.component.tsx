@@ -11,7 +11,7 @@ const RecipeList = ({title, recipes}: IRecipeList) => {
 
   return (
     <div className="recipe-list">
-      <h2>{title}</h2>
+      <h2 className="title">{title}</h2>
       <ul>{renderRecipes()}</ul>
     </div>
   )

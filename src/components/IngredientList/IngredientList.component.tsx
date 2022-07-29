@@ -18,7 +18,7 @@ const IngredientList = (props: Props) => {
 
   return (
     <div className="ingredients-section">
-        <h2>Trending Ingredients</h2>
+        <h2 className="title">Trending Ingredients</h2>
         <ul className="ingredients-list">{renderIngredients()}</ul>
     </div>
   )
